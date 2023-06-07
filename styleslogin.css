@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #271b45;
+    background: rgb(29, 26, 85);
+    /* background: linear-gradient(90deg, rgba(29, 26, 85, 1) 9%, rgba(26, 24, 96, 1) 28%, rgba(11, 11, 154, 1) 48%, rgba(63, 7, 215, 1) 100%); */
+    margin: 0;
+    padding: 0;
+    background-image: url(blob-scene-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.maincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+}
+
+form {
+    background-color: #dfdbed;
+    border-radius: 5px;
+    padding: 70px;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url(circle-scatter-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2 {
+    padding-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    /* border: 1px solid #cccccc; */
+
+    border: 1px solid #1e0e4a;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    left: 11px;
+
+    border: none;
+    background-color: #1e0e4a;
+    color: #eeecf2;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f0f87;
+}
+
+.nav1 {
+    background-color: transparent;
+    padding: 8px;
+
+}
+
+.ul1 {
+    display: flex;
+
+    justify-content: space-around;
+
+
+}
+
+#li1 {
+    color: white;
+    list-style: none;
+    /* background-color: #1e0e4a; */
+    width: 120px;
+    height: 45px;
+    font-weight: 400;
+    border-radius: 8px;
+    position: relative;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    transition: border-bottom 0.25s ease-in-out;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 6px;
+    border-radius: 6px;
+    background-color: blue;
+    /* transform: translateX(-100%); */
+    transition: width 1.5s ease;
+}
+
+li:hover::after {
+    /* transform: translateX(0); */
+    width: 100%;
+}
+
+.sec1 {
+    gap: 6px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    left: 8px;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+}
